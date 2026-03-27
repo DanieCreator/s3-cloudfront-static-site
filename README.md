@@ -18,3 +18,13 @@ User → CloudFront (CDN) → S3 (Private Bucket)
 - Prevents unauthorized access to S3 objects
 - Improves global performance through caching
 - Reduces latency for users in different regions
+## Testing
+- Direct S3 access returns Access Denied
+- CloudFront URL successfully serves the website
+## Future Improvements
+- Add CI/CD pipeline for automatic deployments
+- Configure a custom domain with SSL (ACM)
+- Enable logging and monitoring (CloudWatch, S3 logs)
+## Lessons Learned
+
+This project helped me understand how to design secure cloud architectures by separating storage from public access and using managed services effectively.
