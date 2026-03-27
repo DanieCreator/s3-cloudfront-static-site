@@ -28,3 +28,19 @@ User → CloudFront (CDN) → S3 (Private Bucket)
 ## Lessons Learned
 
 This project helped me understand how to design secure cloud architectures by separating storage from public access and using managed services effectively.
+# What to do next
+## CI/CD Pipeline
+
+This project will include a GitHub Actions pipeline that automates deployment.
+
+### Workflow
+
+* Code is pushed to the main branch
+* GitHub Actions uploads files to S3
+* CloudFront cache is invalidated
+* Changes are reflected globally within seconds
+
+### Why This Matters
+
+This removes the need for manual deployments and ensures consistency across updates. It also reflects how modern teams ship frontend applications in production environments.
+
